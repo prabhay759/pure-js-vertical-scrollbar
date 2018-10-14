@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Vertical Scroll Bar</title>
+	<link rel="stylesheet" href="vertical-scrollbar.css">
+	<script type="text/javascript" src="vertical-scrollbar.js"></script>
+	
+</head>
+<body onload="scroll()">
+    <div class="scrollable">
+        <div class="content-wrapper">
+            <div class="content">
+                <p id="textBox"></p>
+				<script type="text/javascript">
+				  var paragraph = document.getElementById("textBox");
+				  for(var i=0; i<100; i++) {
+					paragraph.innerHTML += "<p>The quick brown fox jumps over the lazy dog</p>";
+				}
+				</script>
+            </div>
+        </div>
+    </div>
+</body>
